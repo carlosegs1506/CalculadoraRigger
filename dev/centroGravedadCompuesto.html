@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Centro de Gravedad Compuesto</title>
+    <link rel="icon" type="image/x-icon" href="../assest/img/gancho.png" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/gancho.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/style.css">
+</head>
+
+<body>
+
+    <ul class="ul_principal_segundario">
+        <li>
+            <button class="button_principal_segundario"><a href="../dev/segundario.html">Regresar</a></button>
+            <img class=" imagen" src="../assest/img/descarga-NZU3lSOOd-transformed.png">
+        </li>
+    </ul>
+
+    <div class="container_todos">
+        <h2>CENTRO DE GRAVEDAD COMPUESTO</h2>
+        <div class="inputs">
+            <label for="peso1">Peso 1</label>
+            <input type="number" id="peso1" name="peso" placeholder="Ingresa el peso 1" required>
+            <div id="peso1Error" class="error-message"></div>
+
+            <label for="distancia1">Distancia 1<br><span class="descripcion">Tomada como referencia de la mitad del
+                    centro de gravedad
+                    imaginario de la primera pieza hacia la derecha o izquierda de la misma.</span></label>
+            <input type="number" id="distancia1" name="distancia1" placeholder="Ingresa la distancia 1" required>
+            <div id="distancia1Error" class="error-message"></div>
+
+            <label for="peso2">Peso 2</label>
+            <input type="number" id="peso2" name="peso2" placeholder="Ingresa el peso 2" required>
+            <div id="peso2Error" class="error-message"></div>
+
+            <label for="distancia2">Distancia 2<br><span class="descripcion">Tomada como referencia desde el
+                    inicio de la pieza hacia
+                    el
+                    centro
+                    de gravedad imaginario de la segunda pieza.</span></label>
+            <input type="number" id="distancia2" name="distancia2" placeholder="Ingresa la distancia 2" required>
+            <div id="distancia2Error" class="error-message"></div>
+
+            <label for="peso3">Peso 3</label>
+            <input type="number" id="peso3" name="peso3" placeholder="Ingresa el peso 3" required>
+            <div id="peso3Error" class="error-message"></div>
+
+            <label for="distancia3">Distancia 3 (mts):<br><span class="descripcion">Tomada como referencia desde el
+                    inicio de la pieza hacia
+                    el
+                    centro
+                    de gravedad imaginario de la tercera pieza.</span></label>
+            <input type="number" id="distancia3" name="distancia3" placeholder="Ingresa la distancia 3" required>
+            <div id="distancia3Error" class="error-message"></div>
+
+        </div>
+        <button class="enviar" onclick="centroGravedadCompuesto()"><span class="span">Calcular</span></button>
+        <div class="result">
+            <p>Centro de Gravedad:
+                <span id="centroGravedad"></span>
+            </p>
+        </div>
+    </div>
+
+    <div id="procesoCompuesto" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none;">
+        <img src="../assest/img/centro_de_gravedad_compuesto-transformed.png" alt="imagen altura de trabajo">
+    </div>
+
+    <script src="../assest/js/centroGravedadCompuesto.js"></script>
+
+</body>

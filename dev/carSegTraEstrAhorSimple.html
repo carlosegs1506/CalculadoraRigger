@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Carga Segura Estrobos Lazo Simple</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/gancho.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/style.css">
+</head>
+
+<body>
+
+    <ul class="ul_principal_segundario">
+        <li>
+            <button class="button_principal_segundario"><a href="../dev/segundario.html">Regresar</a></button>
+            <img class=" imagen" src="../assest/img/descarga-NZU3lSOOd-transformed.png">
+        </li>
+    </ul>
+
+    <div class="container_todos">
+        <h2>CAPACIDAD ESTROBOS SEGUN SU DIAMETRO</h2>
+        <div class="inputs">
+            <label for="capacidadEstrobos">Ingresa las pulgadas</label>
+            <input type="text" id="capacidadEstrobos" step="any" name="capacidad"
+                placeholder="Ingrese las pulgadas + fraccion" required>
+            <div id="capacidadError" class="error-message"></div>
+            <label for="amarre">Tipo de estrobado</label>
+            <select id="amarre">
+                <option value="axial">Axial</option>
+                <option value="lazo">Lazo</option>
+                <option value="canasta">Canasta</option>
+            </select>
+        </div>
+
+        <button class="enviar" onclick="calcularCapacidad()"><span class="span">Calcular</span></button>
+        <div class="result">
+            <p>Capacidad:
+                <span id="resultado"></span>
+            </p>
+        </div>
+    </div>
+
+    <!-- <div class="container_todos">
+        <h2>CARGA SEGURA EN ESTROBOS LAZO SIMPLE</h2>
+        <div class="inputs">
+            <label for="capacidad">Capacidad Axial</label>
+            <input type="number" id="capacidad" step="any" name="capacidad" placeholder="Ingrse la capacidad" required>
+            <div id="estroboError" class="error-message"></div>
+        </div>
+        <button class="enviar" onclick="capacidadSeguraAxial()"><span class="span">Calcular</span></button>
+        <div class="result">
+            <p>Carga Segura:
+                <span id="capacidadSeguraEstroboAxial"></span>
+            </p>
+        </div>
+    </div> -->
+
+    <div class="container_todos">
+        <h2>CARGA SEGURA EN ESTROBOS LAZO SIMPLE</h2>
+        <div class="inputs">
+            <label for="capacidadAxial">Capacidad Axial</label>
+            <input type="number" id="capacidadAxial" step="any" name="capacidadAxial"
+                placeholder="Ingresar la capacidad" required>
+            <div id="estroboError" class="error-message"></div>
+        </div>
+        <button class="enviar" onclick="capacidadSeguraAxial()"><span class="span">Calcular</span></button>
+        <div class="result">
+            <p>Carga Segura:
+                <span id="capacidadSeguraEstroboAxial"></span>
+            </p>
+        </div>
+    </div>
+
+    <div id="procesoSimple" class="proceso"></div>
+
+    <script src="../assest/js/capEstrobos.js"></script>
+    <script src="../assest/js/carSegTraEstrAhorSimple.js"></script>
+
+</body>
+
+</html>

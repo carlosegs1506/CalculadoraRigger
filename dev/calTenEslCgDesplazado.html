@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Tension de Eslinga CG Desplazado</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/gancho.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/style.css">
+</head>
+
+<body>
+
+    <ul class="ul_principal_segundario">
+        <li>
+            <button class="button_principal_segundario"><a href="../dev/segundario.html">Regresar</a></button>
+            <img class="imagen" src="../assest/img/descarga-NZU3lSOOd-transformed.png">
+        </li>
+    </ul>
+
+    <div class="container_todos">
+        <h2>TENSION DE ESLINGA CG DEZPLAZADO</h2>
+        <div class="inputs">
+            <label for="peso">Peso</label>
+            <input type="number" id="peso" name="peso" step="any" placeholder="Ingrese el peso" required>
+            <div id="pesoError" class="error-message"></div>
+
+            <label for="altura">Altura</label>
+            <input type="number" id="altura" name="altura" step="any" placeholder="Ingrese la altura" required>
+            <div id="alturaError" class="error-message"></div>
+
+            <label for="dif1">Diferencia 1: Radio existente en lado izquierdo</label>
+            <input type="number" id="dif1" name="dif1" step="any" placeholder="Ingrese la diferencia 1" required>
+            <div id="dif1Error" class="error-message"></div>
+
+            <label for="dif2">Diferencia 2: Radio existente en lado derecho</label>
+            <input type="number" id="dif2" name="dif2" step="any" placeholder="Ingrese la diferencia 2" required>
+            <div id="dif2Error" class="error-message"></div>
+
+            <label for="largo1">Largo Eslinga 1</label>
+            <input type="number" id="largo1" name="largo1" step="any" placeholder="Ingrese el largo 1" required>
+            <div id="largo1Error" class="error-message"></div>
+
+            <label for="largo2">Largo Eslinga 2</label>
+            <input type="number" id="largo2" name="largo2" step="any" placeholder="Ingrese el largo 2" required>
+            <div id="largo2Error" class="error-message"></div>
+
+        </div>
+        <button class="enviar" onclick="calcularTensionCentroMovido()"><span class="span">Calcular</span></button>
+        <div class="result">
+            <p>Tensión 1:
+                <span id="tensionMovida1"></span>
+            </p>
+            <p>Tensión 2:
+                <span id="tensionMovida2"></span>
+            </p>
+        </div>
+    </div>
+
+    <div id="procesoMovido" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none;">
+        <img src="../assest/img/tension de eslinga cg desplazado anguada.png" alt="imagen altura de trabajo">
+    </div>
+
+    <script src="../assest/js/calTenEslCgDesplazado.js"></script>
+
+</body>
+
+</html>

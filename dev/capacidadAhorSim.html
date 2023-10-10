@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Tension lazo Simple</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assest/img/gancho.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/style.css">
+</head>
+
+<body>
+
+    <ul class="ul_principal_segundario">
+        <li>
+            <button class="button_principal_segundario"><a href="../dev/principal.html">Regresar</a></button>
+            <img class="imagen" src="../assest/img/descarga-NZU3lSOOd-transformed.png">
+        </li>
+    </ul>
+
+    <div class="container_todos">
+        <h2>CAPACIDAD MANIOBRA LAZO SIMPLE</h2>
+        <div class="inputs">
+            <label for="capacidad">Capacidad</label>
+            <input type="number" id="capacidad" step="any" name="capacidad" placeholder="Ingrese la capacidad" required>
+            <div id="capacidadError" class="error-message"></div>
+        </div>
+        <button class="enviar" onclick="calculoTensionAhorcadoSimple()"><span class="span">Calcular</span></button>
+        <div class="result">
+            <p>Capacidad:
+                <span id="ahorcadoSimple"></span>
+            </p>
+        </div>
+    </div>
+
+    <div id="procesoSimple" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none;">
+        <img src="../assest/img/lazo simple 1.png" alt="imagen altura de trabajo">
+    </div>
+
+    <script src="../assest/js/capacidadAhorSim.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Centro De Gravedad</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/gancho.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/style.css">
+</head>
+
+<body>
+
+    <ul class="ul_principal_segundario">
+        <li>
+            <button class="button_principal_segundario"><a href="../dev/segundario.html">Regresar</a></button>
+            <img class=" imagen" src="../assest/img/descarga-NZU3lSOOd-transformed.png">
+        </li>
+    </ul>
+
+    <div class="container_todos">
+        <h2>CENTRO DE GRAVEDAD</h2>
+        <div class="inputs">
+            <label for="peso1">Peso 1</label>
+            <input type="number" id="peso1" step="any" name="peso1" placeholder="Ingresa el peso 1" required>
+            <div id="peso1Error" class="error message"></div>
+
+            <label for="distancia_1">Distancia 1<span class="descripcion"><br>Tomada como referencia a la mitad del
+                    centro de gravedad
+                    imaginario de la primera pieza hacia la izquierda de la misma.</span></label>
+            <input type="number" id="distancia_1" step="any" name="distancia_1" placeholder="Ingresa la distancia 1"
+                required>
+            <div id="distancia_1Error" class="error message"></div>
+
+            <label for="peso2">Peso 2</label>
+            <input type="number" id="peso2" name="peso2" placeholder="Ingresa el peso 2" required>
+            <div id="peso2Error" class="error message"></div>
+
+            <label for="distancia_2">Distancia 2<span class="descripcion"><br>Tomada como referencia desde el inicio de
+                    la
+                    pieza
+                    hacia el
+                    centro
+                    de gravedad imaginario de la segunda pieza.</span> </label>
+            <input type="number" id="distancia_2" step="any" name="distancia_2" placeholder="Ingresa la distancia 2"
+                required>
+            <div id="distancia_2Error" class="error message"></div>
+        </div>
+
+        <button class="enviar" onclick="calcularCentroGravedad()"><span class="span">Calcular</span></button>
+        <div class="result">
+            <p>Centro de gravedad:
+                <span id="calcularGravedad"></span>
+            </p>
+        </div>
+    </div>
+
+    <div id="procesoGravedad" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none;">
+        <img src="../assest/img/centro de gravedad.png" alt="imagen altura de trabajo">
+    </div>
+
+    <script src="../assest/js/centroDeGravedad.js"></script>
+
+</body>
+
+</html>

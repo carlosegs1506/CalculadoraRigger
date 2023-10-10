@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Tension Tanden</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assest/img/gancho.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/style.css">
+</head>
+
+<body>
+    <ul class="ul_principal_segundario">
+        <li>
+            <button class="button_principal_segundario"><a href="../dev/segundario.html">Regresar</a></button>
+            <img class="imagen" src="../assest/img/descarga-NZU3lSOOd-transformed.png">
+        </li>
+    </ul>
+
+    <div class="container_todos">
+        <h2>TANDEN</h2>
+        <div class="inputs">
+            <label>Ingresa los valores para calcular la tensión con estrobada inicial pareja:</label>
+            <form id="tensionForm">
+                <label for="peso">Peso (N):</label>
+                <input type="number" id="peso" step="any" required>
+                <div id="pesoError" class="error-message"></div>
+
+                <label for="d1">d1 (m):</label>
+                <input type="number" id="d1" step="any" required>
+                <div id="d1Error" class="error-message"></div>
+
+                <label for="d2">d2 (m):</label>
+                <input type="number" id="d2" step="any" required>
+                <div id="d2Error" class="error-message"></div>
+
+                <label for="d3">d3 (m):</label>
+                <input type="number" id="d3" step="any" required>
+                <div id="d3Error" class="error-message"></div>
+
+                <label for="angulo">Ángulo (grados):</label>
+                <input type="number" id="angulo" step="any" required>
+                <div id="anguloError" class="error-message"></div>
+            </form>
+        </div>
+
+        <button class="tanden" onclick="calcularTension()"><span class="span">Calcular</span></button>
+        <div class="result">
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <div id="procesoDesarrollo" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none;">
+        <img src="../assest/img/tandem.png" alt="imagen oreja de montaje">
+    </div>
+
+    <script src="../assest/js/tanden.js"></script>
+
+</body>
+
+</html>

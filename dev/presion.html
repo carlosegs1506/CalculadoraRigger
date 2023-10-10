@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Presion</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/gancho.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/style.css">
+</head>
+
+<body>
+
+    <ul class="ul_principal_segundario">
+        <li>
+            <button class="button_principal_segundario"><a href="../dev/segundario.html">Regresar</a></button>
+            <img class="imagen" src="../assest/img/descarga-NZU3lSOOd-transformed.png">
+        </li>
+    </ul>
+
+    <div class="container_todos">
+        <h2>CALCULO DE PRESION</h2>
+        <div class="inputs">
+            <label for="fuerza">Fuerza</label>
+            <input type="number" id="fuerza" step="any" placeholder="Ingresa la fuerza (Presion de cilindro hidraulico)"
+                name="fuerza" required>
+            <div id="fuerzaError" class="error-message"></div>
+
+            <fieldset>
+                <legend>Area</legend>
+                <label for="ancho">Ancho</label>
+                <input type="number" id="ancho" step="any" placeholder="Ingresa el ancho" name="ancho" required>
+                <div id="anchoError" class="error-message"></div>
+
+                <label for="alto">Alto</label>
+                <input type="number" id="alto" step="any" placeholder="Ingresa el alto" name="alto" required>
+                <div id="altoError" class="error-message"></div> <!-- Cambiado anchoError por altoError -->
+            </fieldset>
+
+        </div>
+        <button class="enviar" onclick="calculoPresion()"><span class="span">Calcular</span></button>
+        <div class="result">
+            <p>Presion:
+                <span id="resultado"></span>
+            </p>
+        </div>
+    </div>
+
+    <div id="procesoPresion" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none;">
+        <img src="../assest/img/presion.png" alt="imagen oreja de montaje">
+    </div>
+
+    <script src="../assest/js/presion.js"></script>
+
+</body>
+
+</html>

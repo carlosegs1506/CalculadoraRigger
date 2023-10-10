@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Prueba de Conocimientos de Grúas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assest/img/gancho.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/style.css">
+
+</head>
+
+<body>
+
+    <ul class="ul_principal_segundario">
+        <li>
+            <button class="button_principal_segundario"><a href="./preguntas.html">Regresar</a></button>
+            <img class=" imagen" src="../assest/img/descarga-NZU3lSOOd-transformed.png">
+        </li>
+    </ul>
+
+    <div class="container_todos">
+        <h2>CONOCIMIENTOS GENERALES</h2>
+    </div>
+    <div class="inputs">
+        <form id="quiz-form">
+            <ul style="list-style: none;">
+                <li>
+                    <div class="image">
+                        <img src="../assest/img/tabla_de_capacidad-transformed.png" alt="tabla de capacidad"
+                            width="100%" height="300px">
+                    </div>
+                    <div class="image">
+                        <img src="../assest/img/imagen_tabla_de_carga-transformed.png" alt="tabla de carga" width="100%"
+                            height="300px">
+                    </div>
+                    <!-- Pregunta 101 -->
+                    <h3>101) De acuerdo a los antecedentes entregados, se puede izar la carga sin emplear los
+                        estabilizadores:</h3>
+                    <label><input type="radio" name="q101" value="a"> a. Verdadero.</label>
+                    <label><input type="radio" name="q101" value="b"> b. Falso.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q101', 'b', 'result101')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 101 -->
+                    <div id="result101"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 102 -->
+                    <h3>102) Si tengo los datos de largo de pluma y ángulo puedo determinar el peso a izar:
+                    </h3>
+                    <label><input type="radio" name="q102" value="a"> a. Verdadero.</label>
+                    <label><input type="radio" name="q102" value="b"> b. Falso.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q102', 'a', 'result102')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 102 -->
+                    <div id="result102"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 103 -->
+                    <h3>103) De acuerdo a la misma curva, se puede transportar carga sujeta al gancho:
+                    </h3>
+                    <label><input type="radio" name="q103" value="a"> a. Verdadero.</label>
+                    <label><input type="radio" name="q103" value="b"> b. Falso.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q103', 'a', 'result103')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 103 -->
+                    <div id="result103"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 104 -->
+                    <h3>104) La curva de carga ya considera el peso del gancho:
+                    </h3>
+                    <label><input type="radio" name="q104" value="a"> a. Verdadero.</label>
+                    <label><input type="radio" name="q104" value="b"> b. Falso.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q104', 'a', 'result104')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 104 -->
+                    <div id="result104"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 105 -->
+                    <h3>105) Cualquier curva de carga, siempre y cuando sea de un equipo de la misma
+                        capacidad, puede emplearse para cualquier equipo:
+                    </h3>
+                    <label><input type="radio" name="q105" value="a"> a. Verdadero.</label>
+                    <label><input type="radio" name="q105" value="b"> b. Falso.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q105', 'b', 'result105')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 105 -->
+                    <div id="result105"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 106 -->
+                    <h3>106) Para qué sirve la tabla de carga facilitada:
+                    </h3>
+                    <label><input type="radio" name="q106" value="a"> a. Para calcular el peso.</label>
+                    <label><input type="radio" name="q106" value="b"> b. Para calcular el angulo.</label>
+                    <label><input type="radio" name="q106" value="c"> a. Para calcular el radio.</label>
+                    <label><input type="radio" name="q106" value="d"> b. Solo A y C.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q106', 'd', 'result106')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 106 -->
+                    <div id="result106"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 107 -->
+                    <h3>107) Para qué sirve el grafico de ángulos entregado:
+                    </h3>
+                    <label><input type="radio" name="q107" value="a"> a. Para calcular el radio.</label>
+                    <label><input type="radio" name="q107" value="b"> b. Para calcular el angulo.</label>
+                    <label><input type="radio" name="q107" value="c"> c. Para calcular la altura.</label>
+                    <label><input type="radio" name="q107" value="d"> d. Todas las anteriores.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q107', 'd', 'result107')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 107 -->
+                    <div id="result107"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 108 -->
+                    <h3>108) La línea negra que aparece en la curva de carga, que indica:
+                    </h3>
+                    <label><input type="radio" name="q108" value="a"> a. Nada.</label>
+                    <label><input type="radio" name="q108" value="b"> b. Divide la tabla de carga en riesgo de
+                        operacion, sobre menor riesgo, bajo mayor riesgo.</label>
+                    <label><input type="radio" name="q108" value="c"> c. Falla estructural y falla de
+                        volcamiento.</label>
+                    <label><input type="radio" name="q108" value="d"> d. Ninguna de las anteriores.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q108', 'c', 'result108')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 108 -->
+                    <div id="result108"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 109 -->
+                    <h3>109) Como se representa falla al volcamiento en la tabla de carga facilitada:
+                    </h3>
+                    <label><input type="radio" name="q109" value="a"> a. Con un asterisco.</label>
+                    <label><input type="radio" name="q109" value="b"> b. Valores sobre línea negra divisoria.</label>
+                    <label><input type="radio" name="q109" value="c"> c. Valores bajo línea negra divisoria.</label>
+                    <label><input type="radio" name="q109" value="d"> d. A y B.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q109', 'c', 'result109')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 109 -->
+                    <div id="result109"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 110 -->
+                    <h3>110) Como se representa la falla estructural en la tabla de carga facilitada:
+                    </h3>
+                    <label><input type="radio" name="q110" value="a"> a. No se representa. </label>
+                    <label><input type="radio" name="q110" value="b"> b. Con una barra.</label>
+                    <label><input type="radio" name="q110" value="c"> c. Valores sobre la linea divisoria.
+                    </label>
+                    <label><input type="radio" name="q110" value="d"> d. Ninguna de las anteriores.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q110', 'c', 'result110')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 110 -->
+                    <div id="result110"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 111 -->
+                    <h3>111) Para utilizar esta tabla de carga que condiciones debe cumplir el equipo:
+                    </h3>
+                    <label><input type="radio" name="q111" value="a"> a. Estar nivelado en 0°.</label>
+                    <label><input type="radio" name="q111" value="b"> b. Estabilizadores 100% extendidos.</label>
+                    <label><input type="radio" name="q111" value="c"> c. Estar en perfectas condiciones.
+                    </label>
+                    <label><input type="radio" name="q111" value="d"> d. Solo A y B.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q111', 'd', 'result111')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 111 -->
+                    <div id="result111"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 112 -->
+                    <h3>112) De acuerdo a la curva de carga que se le ha facilitado, la capacidad máxima de
+                        carga con 62 pies de pluma, antes de la línea de volteo es:
+                    </h3>
+                    <label><input type="radio" name="q112" value="a"> a. 23.500 lbs.</label>
+                    <label><input type="radio" name="q112" value="b"> b. 26.800 lbs.</label>
+                    <label><input type="radio" name="q112" value="c"> c. 31.100 lbs.
+                    </label>
+                    <label><input type="radio" name="q112" value="c"> d. Solo A y B.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q112', 'c', 'result112')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 112 -->
+                    <div id="result112"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 113 -->
+                    <h3>113) De acuerdo a esta misma curva de carga, cuanto es el máximo de libras que pueden
+                        levantar con toda la pluma extendida y 18,2 mts. de radio, en 360°:
+                    </h3>
+                    <label><input type="radio" name="q113" value="a"> a. 9.500 lbs.</label>
+                    <label><input type="radio" name="q113" value="b"> b. 11.500 lbs.</label>
+                    <label><input type="radio" name="q113" value="c"> c. 12.200 lbs.
+                    </label>
+                    <label><input type="radio" name="q113" value="d"> d. Ninguna de las anteriores.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q113', 'b', 'result113')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 113 -->
+                    <div id="result113"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 114 -->
+                    <h3>114) De acuerdo a la curva de carga entregada, si se requiere levantar una carga de 6.260
+                        kilogramos, a que radio, largo de pluma y ángulo debe ejecutar la maniobra:
+                    </h3>
+                    <label><input type="radio" name="q114" value="a"> a. Radio 16,76 mts, Pluma 21,95 mts, Angulo
+                        55°.</label>
+                    <label><input type="radio" name="q114" value="b"> b. Radio 18,29 mts, Pluma 25,91 mts, Angulo
+                        50.</label>
+                    <label><input type="radio" name="q114" value="c"> c. Radio 16,76 mts, Pluma 25,91 mts, Angulo 45°.
+                    </label>
+                    <label><input type="radio" name="q114" value="d"> d. Ninguna de las anteriores.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q114', 'a', 'result114')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 114 -->
+                    <div id="result114"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 115 -->
+                    <h3>115) Para levantar una carga de 15.340 libras, según curva de carga entregada a que
+                        radio se puede realizar, con cuanta pluma y a que ángulo:
+                    </h3>
+                    <label><input type="radio" name="q115" value="a"> a. Radio 50 pies, Pluma 85 pies, Angulo
+                        50°.</label>
+                    <label><input type="radio" name="q115" value="b"> b. Radio 55 pies, Pluma 72 pies, Angulo
+                        35°.</label>
+                    <label><input type="radio" name="q115" value="c"> c. Radio 60 pies, Pluma 85 pies, Angulo 40°.
+                    </label>
+                    <label><input type="radio" name="q115" value="d"> d. Ninguna de las anteriores.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q115', 'a', 'result115')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 115 -->
+                    <div id="result115"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 116 -->
+                    <h3>116) Para izar una carga de 25.000 kg, a que radio, largo de pluma y ángulo podría
+                        realizar esta operación:
+                    </h3>
+                    <label><input type="radio" name="q116" value="a"> a. Radio 16,19 mts, Pluma 17,07 mts, Angulo
+                        55°.</label>
+                    <label><input type="radio" name="q116" value="b"> b. Radio 12,19 mts, Pluma 17,07 mts, Angulo
+                        40°.</label>
+                    <label><input type="radio" name="q116" value="c"> c. Radio 6,10 mts, Pluma 17,07 mts, Angulo 65°.
+                    </label>
+                    <label><input type="radio" name="q116" value="d"> d. Ninguna de las anteriores.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q116', 'c', 'result116')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 116 -->
+                    <div id="result116"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 117 -->
+                    <h3>117) En el gráfico de ángulo adjunto indique a que grados debe estar la pluma con 105
+                        pies de pluma y 50 pies de radio:
+                    </h3>
+                    <label><input type="radio" name="q117" value="a"> a. 50°.</label>
+                    <label><input type="radio" name="q117" value="b"> b. 35°.</label>
+                    <label><input type="radio" name="q117" value="c"> c. 40°.
+                    </label>
+                    <label><input type="radio" name="q117" value="d"> d. 60°.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q117', 'b', 'result117')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 117 -->
+                    <div id="result117"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 118 -->
+                    <h3>118) En el gráfico de ángulo adjunto indique a que grados debe estar la pluma con 21,9
+                        mts. de pluma y 6,1 mts. de radio:
+                    </h3>
+                    <label><input type="radio" name="q118" value="a"> a. 50°.</label>
+                    <label><input type="radio" name="q118" value="b"> b. 35°.</label>
+                    <label><input type="radio" name="q118" value="c"> c. 40°.
+                    </label>
+                    <label><input type="radio" name="q118" value="d"> d. 70°.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q118', 'c', 'result118')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 118 -->
+                    <div id="result118"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 119 -->
+                    <h3>119) Cuáles son los ángulos máximo y mínimo que puede operar este equipo:
+                    </h3>
+                    <label><input type="radio" name="q119" value="a"> a. 10° a 78°.</label>
+                    <label><input type="radio" name="q119" value="b"> b. 0° a 78°.</label>
+                    <label><input type="radio" name="q119" value="c"> c. 0° a 100°.
+                    </label>
+                    <label><input type="radio" name="q119" value="d"> d. Ninguna de las anteriores.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q119', 'c', 'result119')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 119 -->
+                    <div id="result119"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Pregunta 120 -->
+                    <h3>120) Cuál es la capacidad máxima de este equipo:
+                    </h3>
+                    <label><input type="radio" name="q120" value="a"> a. 120.000 lbs.</label>
+                    <label><input type="radio" name="q120" value="b"> b. 54.431 kgs.</label>
+                    <label><input type="radio" name="q120" value="c"> c. A y B.
+                    </label>
+                    <label><input type="radio" name="q120" value="d"> d. Ninguna de las anteriores.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q120', 'c', 'result120')"><span
+                            class="span">Verificar</span></button>
+                    <!-- Resultado de la Pregunta 120 -->
+                    <div id="result120"></div>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+    <div id="results"></div>
+    </div>
+
+    <script src="../assest/js/preguntas.js"></script>
+
+</body>
+
+</html>

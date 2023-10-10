@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Conversor de Unidades</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assest/img/gancho.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/style.css">
+</head>
+
+<body>
+
+    <ul class="ul_principal_segundario">
+        <li>
+            <button class="button_principal_segundario"><a href="../dev/principal.html">Regresar</a></button>
+            <img class="imagen" src="../assest/img/descarga-NZU3lSOOd-transformed.png">
+        </li>
+    </ul>
+
+    <div class="container_todos">
+        <h2>UNIDADES DE MEDIDA Y PESO</h2>
+        <br>
+        <div class="inputs">
+            <select id="unidadesOrigen">
+                <option value="milimetros">milímetros</option>
+                <option value="centimetros">centimetros</option>
+                <option value="metros">metros</option>
+                <option value="pies">pies</option>
+                <option value="pulgadas">pulgadas</option>
+                <option value="libras">libras</option>
+                <option value="kilogramos">kilogramos</option>
+            </select>
+            <input type="number" id="valor" name="valor" placeholder="Ingrese el valor" step="any" required>
+            <div id="valorError" class="error-message"></div>
+            <select id="unidadesDestino">
+                <option value="metros">metros</option>
+                <option value="milimetros">milimetros</option>
+                <option value="centimetros">centímetros</option>
+                <option value="pulgadas">pulgadas</option>
+                <option value="kilogramos">kilogramos</option>
+                <option value="toneladas">toneladas</option>
+            </select>
+            <input type="text" id="resultado" readonly>
+        </div>
+
+        <button class="enviar" onclick="convertirUnidades()"><span class="span">Convertir</span></button>
+    </div>
+
+    <script src="../assest/js/unidadesMasaYPeso.js"></script>
+
+</body>
+
+</html>

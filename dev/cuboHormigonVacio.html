@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Cubo Hormigon Vacio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/gancho.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/style.css">
+</head>
+
+<body>
+
+    <ul class="ul_principal_segundario">
+        <li>
+            <button class="button_principal_segundario"><a href="../dev/segundario.html">Regresar</a></button>
+            <img class="imagen" src="../assest/img/descarga-NZU3lSOOd-transformed.png">
+        </li>
+    </ul>
+
+    <div class="container_todos">
+        <h2>CUBO DE HORMIGON VACIO EN SU INTERIOR</h2>
+        <div class="inputs">
+            <label for="largo1">Largo Exterior</label>
+            <input type="number" id="largo1" name="largo1" step="any" placeholder="Ingresa el largo exterior en mts"
+                required>
+            <div id="largo1Error" class="error-message"></div>
+
+            <label for="largo2">Largo Interior</label>
+            <input type="number" id="largo2" name="largo2" step="any" placeholder="Ingresa el largo interior en mts"
+                required>
+            <div id="largo2Error" class="error-message"></div>
+
+            <label for="ancho1">Ancho Exterior</label>
+            <input type="number" id="ancho1" name="ancho1" step="any" placeholder="Ingresa el ancho exterior en mts"
+                required>
+            <div id="ancho1Error" class="error-message"></div>
+
+            <label for="ancho2">Ancho Interior</label>
+            <input type="number" id="ancho2" name="ancho2" step="any" placeholder="Ingresa el ancho interioren en mts"
+                required>
+            <div id="ancho2Error" class="error-message"></div>
+
+            <label for="alto">Alto</label>
+            <input type="number" id="alto" name="alto" step="any" placeholder="Ingresa el alto en mts" required>
+            <div id="altoError" class="error-message"></div>
+
+            <label for="peso">Peso Especifico</label>
+            <input type="number" id="peso" name="peso" step="any" placeholder="Ingresa el peso especifico" required>
+            <div id="pesoError" class="error-message"></div>
+
+        </div>
+        <button class="enviar" onclick="calculoCubo()"><span class="span">Calcular</span></button>
+        <div class="result">
+            <p>Peso:
+                <span id="cubo"></span>
+            </p>
+        </div>
+    </div>
+
+    <div id="procesoCubo" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none;">
+        <img src="../assest/img/cubo vacio.png" alt="cubo vacio">
+    </div>
+
+    <script src="../assest/js/cuboHormigonVacio.js"></script>
+
+</body>
+
+</html>

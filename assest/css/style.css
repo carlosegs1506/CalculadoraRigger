@@ -1,0 +1,475 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.principal {
+  align-items: center;
+  background-color: hsl(262, 53%, 15%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+  position: sticky;
+  top: -10px;
+  font-weight: bold;
+}
+
+.principal img {
+  width: 10%;
+  height: 15%;
+  filter: brightness(1.75);
+}
+
+h1 {
+  color: #fcfc00;
+  font-size: 5vw;
+  font-family: "Nunito Sans", sans-serif;
+  height: 50%;
+  text-align: center;
+  padding-left: 2px;
+  width: 80%;
+}
+
+.container {
+  align-items: center;
+  background-color: #fcfc00;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container div {
+  align-self: center;
+  height: 30%;
+  margin: 15px auto;
+  padding: 5px;
+  text-align: center;
+  width: 90%;
+}
+
+.container button {
+  background-color: hsl(262, 53%, 15%);
+  border-radius: 10px;
+  height: 100%;
+  width: 80%;
+}
+
+.container button a {
+  color: #fcfc00;
+  font-size: 4.5vw;
+  font-family: "Segoe UI", sans-serif;
+  text-decoration: none;
+}
+
+.primario {
+  background-color: hsl(262, 53%, 15%);
+  color: #fcfc00;
+  padding: 15px;
+  text-align: center;
+}
+
+.primario h3 {
+  font-size: 5vw;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* Pagina principal, segundaria */
+main {
+  border-radius: 10px;
+  background-color: hsl(262, 53%, 15%);
+  margin: 5px auto;
+  padding: 15% 0px;
+  width: 95%;
+}
+
+.ul_principal_segundario {
+  padding: 10px 10px;
+  position: relative;
+  list-style: none;
+  margin-bottom: 5%;
+}
+
+.button_principal_segundario {
+  background: hsl(262, 53%, 15%);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.ul_principal_segundario .imagen {
+  height: 60px;
+  top: 30px;
+  position: absolute;
+  right: 20px;
+  width: 40px;
+}
+
+.button_principal_segundario:hover {
+  background-color: #fcfc00;
+  transition: all 250ms linear;
+}
+
+.button_principal_segundario a {
+  font-size: 18px;
+  font-family: "Segoe UI", sans-serif;
+  color: #fcfc00;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button_principal_segundario a:hover {
+  color: hsl(262, 53%, 15%);
+}
+
+.formulas_mas_usadas_otras {
+  border-radius: 10px;
+  background-color: #fcfc00;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px auto;
+  justify-content: center;
+  width: 90%;
+}
+
+.animated {
+  height: 20%;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.formulas_mas_usadas_otras li {
+  background-color: hsl(262, 53%, 15%);
+  border-radius: 5px;
+  height: 40%;
+  list-style: none;
+  margin: 0px auto;
+  text-align: center;
+  padding: 10%;
+  width: 120px;
+}
+
+.formulas_mas_usadas_otras a {
+  color: #fcfc00;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+/* Estilos de las paginas formulas mas usadas y otras formulas */
+
+.container_todos {
+  background-color: hsl(262, 53%, 15%);
+  border: 3px solid hsl(262, 53%, 15%);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  width: 95%;
+}
+
+h2 {
+  color: #fcfc00;
+  font-size: 4vw;
+  font-family: "Nunito Sans", sans-serif;
+  height: 50%;
+  padding: 2px;
+  text-align: center;
+  margin: 5px auto;
+  width: 90%;
+}
+
+.inputs {
+  background-color: #fcfc00;
+  border-radius: 10px;
+  border-color: hsl(262, 53%, 15%);
+  padding: 15px;
+}
+
+.inputs label {
+  color: hsl(262, 53%, 15%);
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 5vw;
+  list-style: none;
+  padding: 10px;
+}
+
+.inputs input {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+select {
+  border-radius: 10px;
+  height: 25px;
+  margin: 10px 10px 10px 10px;
+  padding: 5px 5px 0px 5px;
+  width: 150px;
+}
+
+.descripcion {
+  font-size: 4vw;
+}
+
+.error-message {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 3.5vw;
+  color: #e75c50;
+  padding-top: 5px;
+}
+
+.enviar {
+  background-color: #fcfc00;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  letter-spacing: 0;
+  margin-top: 20px;
+}
+
+.enviar:hover {
+  background-color: hsl(262, 53%, 15%);
+  border: 2px solid #fcfc00;
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+.enviar span {
+  color: hsl(262, 53%, 15%);
+  font-family: "Segoe UI", sans-serif;
+  font-size: 4vw;
+  text-decoration: none;
+}
+
+.enviar span:hover {
+  color: #fcfc00;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result p {
+  font-size: 4vw;
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 10px;
+  color: #fcfc00;
+}
+
+.result span {
+  font-style: italic;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 4vw;
+  color: #fcfc00;
+}
+
+.proceso {
+  background-color: hsl(262, 53%, 15%);
+  border-radius: 10px;
+  margin: 0px auto;
+  padding: 10px;
+  text-align: center;
+  width: 95%;
+}
+
+.proceso h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 4vw;
+  color: #fcfc00;
+}
+
+.proceso p {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  padding: 3px;
+  color: #ffffff;
+}
+
+.formula {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  color: hsl(123, 31%, 46%);
+}
+
+.imagen-proceso {
+  margin: 5px auto;
+  text-align: center;
+  width: 95%;
+}
+
+.imagen-proceso img {
+  height: 200px;
+  max-width: 95%;
+}
+
+.tanden {
+  background-color: #fcfc00;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  letter-spacing: 0;
+  margin-top: 20px;
+}
+
+.tanden:hover {
+  background-color: hsl(262, 53%, 15%);
+  border: 2px solid #fcfc00;
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+.tanden span {
+  color: hsl(262, 53%, 15%);
+  font-family: "Segoe UI", sans-serif;
+  font-size: 4vw;
+  text-decoration: none;
+}
+
+.tanden span:hover {
+  color: #fcfc00;
+}
+
+#quiz-form ul {
+  list-style: none;
+}
+
+#quiz-form h3 {
+  color: hsl(262, 53%, 15%);
+  font-family: "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+  text-align: justify;
+  margin: 10px 0px;
+}
+
+#quiz-form label {
+  font-family: "Segoe UI", sans-serif;
+  color: hsl(262, 53%, 15%);
+  font-size: 0.9rem;
+  padding: 7px;
+  text-align: justify;
+}
+
+#quiz-form button {
+  background-color: hsl(262, 53%, 15%);
+  border-radius: 10px;
+  margin: 10px 0px;
+  width: 25%;
+}
+
+#quiz-form span {
+  color: #fcfc00;
+}
+
+.results {
+  display: inline;
+  padding: 5px;
+}
+
+hr {
+  margin-top: 5px;
+}
+
+.otras_preguntas {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.otras_preguntas button {
+  background-color: hsl(262, 53%, 15%);
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+.otras_preguntas a {
+  color: #fcfc00;
+  text-decoration: none;
+}
+
+.contenedor {
+  background-color: #fcfc00;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px hsl(262, 53%, 15%);
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.contenedor div {
+  text-align: center;
+  margin: 40px 5px;
+}
+.contenedor div a {
+  background-color: #fcfc00;
+  color: hsl(262, 53%, 15%);
+  display: block;
+  font-family: "Segoe UI", sans-serif;
+  height: 30px;
+  margin: 5px 0px;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px) {
+  .principal img {
+    height: 150px;
+  }
+  h1 {
+    font-size: 4vw;
+    padding: 0px;
+  }
+  .container button {
+    height: 100px;
+    width: 50%;
+  }
+  .container button a {
+    font-size: 2.5vw;
+  }
+  .primario h3 {
+    font-size: 4vw;
+  }
+}
+/* Escritorio grande */
+@media only screen and (max-width: 992px) and (orientation: landscape) {
+  .container {
+    height: auto;
+  }
+  .container button {
+    height: 70px;
+  }
+  .container button a {
+    font-size: 3vw;
+  }
+}
+
+/* Escritorio pequeño / tablet */
+/* @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .background {
+    height: 145%;
+  }
+} */
+
+/* Tablets y phablets */
+/* @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .background {
+    height: 200%;
+  }
+} */
+
+/* Teléfonos */
+/* @media only screen and (min-width: 300px) and (max-width: 575px) {
+  .background {
+    height: 310%;
+  }
+} */
