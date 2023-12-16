@@ -28,7 +28,7 @@
 h1 {
   color: #fcfc00;
   font-size: 5vw;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 50%;
   text-align: center;
   padding-left: 2px;
@@ -48,9 +48,21 @@ h1 {
   align-self: center;
   height: 30%;
   margin: 15px auto;
-  padding: 5px;
   text-align: center;
   width: 90%;
+}
+
+.gancho img{
+  background-color: #fcfc00;
+  height: 100px;
+  width: 100px;
+}
+
+.container .primero{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
 }
 
 .container button {
@@ -76,7 +88,7 @@ h1 {
 
 .primario h3 {
   font-size: 5vw;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Pagina principal, segundaria */
@@ -379,8 +391,9 @@ hr {
 .otras_preguntas {
   display: flex;
   height: 50px;
-  width: 100%;
+  margin-top: 15px;
   justify-content: space-around;
+  width: 100%;
 }
 
 .otras_preguntas button {
@@ -418,6 +431,11 @@ hr {
   margin: 5px 0px;
   text-decoration: none;
   width: 100%;
+}
+
+table{
+  margin-left: 25%;
+  padding-top: 10px;
 }
 
 /* Escritorio extra grande */

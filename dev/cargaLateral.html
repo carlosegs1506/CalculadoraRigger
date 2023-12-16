@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assest/img/descarga-NZU3lSOOd-transformed.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/style.css">
+    <title>Calculo Carga Lateral</title>
+</head>
+
+<body>
+
+    <ul class="ul_principal_segundario">
+        <li>
+            <button class="button_principal_segundario"><a href="../dev/segundario.html">Regresar</a></button>
+            <img class="imagen" src="../assest/img/descarga-NZU3lSOOd-transformed.png">
+        </li>
+    </ul>
+
+    <div class="container_todos">
+        <h2>CARGA LATERAL DEBIDO AL VIENTO</h2>
+
+        <div class="inputs">
+            <label for="densidad">Densidad del Viento (kg/m³):</label>
+            <input type="number" id="densidad">
+            <div id="densidadError" class="error-message"></div>
+
+            <label for="area">Área de Referencia (m²):</label>
+            <input type="number" id="area">
+            <div id="areaError" class="error-message"></div>
+
+            <label for="coeficiente">Coeficiente de Arrastre:</label>
+            <input type="number" id="coeficiente">
+            <div id="coeficienteError" class="error-message"></div>
+
+            <label for="velocidad">Velocidad del Viento (m/s):</label>
+            <input type="number" id="velocidad">
+            <div id="velocidadError" class="error-message"></div>
+
+        </div>
+
+        <button class="enviar" onclick="calcularCargaLateral()"><span class="span">Calcular</span></button>
+        <div class="result">
+            <p>Carga Lateral:
+                <span id="result"></span>
+            </p>
+        </div>
+
+        
+        <div class="inputs">
+            <h3>Definiciones:</h3>
+            <p><strong>Densidad del Viento:</strong> Densidad del aire (aproximadamente 1.225 kg/m³ a nivel del mar a 15
+                °C).</p>
+            <p><strong>Área de Referencia:</strong> Área expuesta al viento.</p>
+            <p><strong>Coeficiente de Arrastre:</strong> Valor adimensional que depende de la forma y la orientación de
+                la
+                carga (puede variar entre 0 y 2, dependiendo de la forma de la carga).</p>
+            <p><strong>Velocidad del Viento:</strong> Velocidad del viento incidente sobre la carga.</p>
+        </div>
+    </div>
+    
+    <div id="procesoLateral" class="proceso"></div>
+    <script src="../assest/js/cargaLateral.js"></script>
+</body>
+
+</html>
